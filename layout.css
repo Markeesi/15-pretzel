@@ -1,0 +1,160 @@
+html {
+    font-size: 62.5%;
+    
+  }
+  body {
+    font-family: "Roboto Serif", serif;
+    font-size: 1.6rem;
+    background-color: whitesmoke;
+    padding: 1rem;
+    
+  }
+
+  p {
+    padding: 0 0 0.3rem 0;
+  }
+  h2 {
+    padding: 0.5rem 0 0.5rem 0;
+  }
+
+  #desc {
+    display: none;
+}
+
+  .special {
+    background-color: #5f8188;
+    background-image: url(./assets/special-bg.png);
+    color: #faf5ec;
+    font-size: 1.4rem;
+    background-position: center bottom;
+    background-repeat:repeat-x;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 auto;
+  }
+  .special h1 {
+    margin: 1rem;
+    padding: 1rem;
+  }
+  .special span {
+    font-weight: 700;
+    color: white;
+  }
+
+  .wrapper {
+    background-image: url(./assets/grunge.png);
+    background-repeat: repeat;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 auto;
+    margin-block-start: -1rem;
+    background-color: white;
+  }
+
+
+.logo {
+  display: flex;
+  width: 20%;
+  justify-content: center;
+}
+.navbar {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+}
+
+  .navbar ul {
+    flex: 1;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .navbar a {
+    color: black;
+    text-decoration: none;
+    padding: 0.5rem;
+  }
+
+  .navbar a:first-child {
+    font-weight: 700;
+  }
+
+  .main {
+    margin-top: 1rem;
+    border-top: 1px solid rgb(147, 147, 147);
+  }
+
+  .main-content {
+    padding-top: 1rem;
+    color: black;
+  }
+
+  .main-content p:nth-child(1) {
+    font-weight: 600;
+  }
+
+  .main-content figure img {
+    padding: 0 0 0 0;
+    width: 100%;
+  }
+
+
+  .sidebar {
+    margin-top: 1rem;
+  }
+  .what-are-pretzels {
+    background-color: bisque;
+    border-radius: 0.6rem;
+    padding: 1rem;
+    text-align: center;
+  }
+
+  .sidebar-links {
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1px solid rgb(147, 147, 147);
+    padding-bottom: 0.7rem;
+  }
+
+  .sidebar-links ul {
+    flex-basis: 50%;
+  }
+
+  .footer {
+    padding: 1rem;
+     font-size: 0.6rem;
+     text-align: center;
+
+  }
+  .footer figure img {
+    max-width: 20%;
+    justify-content: center;
+  }
+
+
+  @media screen and (min-width: 426px) {
+    .navbar {
+        flex-direction: row;
+    }
+    .navbar ul {
+      padding: 0 0 0 0;
+    }
+}
+
+@media screen and (min-width: 769px) {
+  .main {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  
+  #desc {
+      margin-inline-start: 0.5rem;
+      display: block;
+      align-items: center;
+  }
+  
+}
